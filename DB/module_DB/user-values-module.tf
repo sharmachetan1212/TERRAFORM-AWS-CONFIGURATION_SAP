@@ -1,0 +1,23 @@
+module "user_module" {
+  source                               = "../../DB"
+  instance_name                        = "TERRAFORM-AWS"
+  instance_profile                     = "ec2-readonly"
+  db_count                             = 1
+  ami_id                               = "ami-012967cc5a8c9f891"
+  sap_sid                              = "SID"
+  oracle_disk_size                     = 200
+  oracle_disk_num                      = 4
+  oracle_data_iops                     = 3000
+  oracle_data_throughput               = 125
+  instance_type_db                     = "t2.micro"
+  oracle_sapdata_volume_type           = "gp3"
+  user                                 = "chetan.sharma"
+  oracle_flashback_disk                = 50
+  oracle_orig_mirr_log_volume_type     = "gp3"
+  IAC_org                              = "SystemAdministrator"
+  appid                                = "APPID01234567890"
+  sap_apsid                            = "APSID_DB_9876543210"
+  region                               = "us-east-1"
+  aws_vpc                              = "vpc-036268133895cbb5a"
+  aws_subnet_id                        = ["subnet-06b04478c693753f9"]
+}
