@@ -4,7 +4,7 @@ module "IAC_TFT" {
   instance_profile              = "ec2-readonly"
   sap_sid                       = "BPM"
   wd_count                      = 1
-  user                          = "aruna.salagala"
+  user                          = "chetan"
   IAC_org                       = "SystemAdministrator"
   instance_type_wd              = "t2.micro"
   wd_ami                        = "ami-012967cc5a8c9f891"
